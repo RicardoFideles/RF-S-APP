@@ -14,13 +14,24 @@
 		8CC43BCF19C3B4D400594EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43BCE19C3B4D400594EE5 /* main.m */; };
 		8CC43BD319C3B4D400594EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43BD219C3B4D400594EE5 /* AppDelegate.m */; };
 		8CC43BD619C3B4D400594EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC43BD419C3B4D400594EE5 /* Main.storyboard */; };
-		8CC43BD919C3B4D400594EE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43BD819C3B4D400594EE5 /* ViewController.m */; };
 		8CC43BDB19C3B4D500594EE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC43BDA19C3B4D500594EE5 /* Images.xcassets */; };
 		8CC43BE219C3B4D500594EE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BE119C3B4D500594EE5 /* XCTest.framework */; };
 		8CC43BE319C3B4D500594EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC219C3B4D400594EE5 /* Foundation.framework */; };
 		8CC43BE419C3B4D500594EE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC619C3B4D400594EE5 /* UIKit.framework */; };
 		8CC43BEC19C3B4D500594EE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CC43BEA19C3B4D500594EE5 /* InfoPlist.strings */; };
 		8CC43BEE19C3B4D500594EE5 /* SalmosDiariosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43BED19C3B4D500594EE5 /* SalmosDiariosTests.m */; };
+		8CC43C0219C3B69D00594EE5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C0119C3B69D00594EE5 /* SWRevealViewController.m */; };
+		8CC43C0819C3B6E400594EE5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43C0719C3B6E400594EE5 /* Social.framework */; };
+		8CC43C0B19C3B73E00594EE5 /* configuracoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC43C0919C3B73E00594EE5 /* configuracoes.json */; };
+		8CC43C0C19C3B73E00594EE5 /* salmos.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC43C0A19C3B73E00594EE5 /* salmos.json */; };
+		8CC43C0F19C3B85E00594EE5 /* BannerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C0E19C3B85E00594EE5 /* BannerHelper.m */; };
+		8CC43C1219C3BBFD00594EE5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1119C3BBFD00594EE5 /* MainViewController.m */; };
+		8CC43C1519C3BC5900594EE5 /* SalmosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1419C3BC5900594EE5 /* SalmosTableViewController.m */; };
+		8CC43C1919C3BE5800594EE5 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1819C3BE5800594EE5 /* SideBarViewController.m */; };
+		8CC43C1D19C47F3D00594EE5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1C19C47F3D00594EE5 /* Menu.m */; };
+		8CC43C2019C47FDD00594EE5 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1F19C47FDD00594EE5 /* menuCell.m */; };
+		8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C2519C4807F00594EE5 /* Menu+Parse.m */; };
+		B013364942FD45D38E1E055C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D66BB417095245B2AA9E5F15 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +56,34 @@
 		8CC43BD119C3B4D400594EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CC43BD219C3B4D400594EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CC43BD519C3B4D400594EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8CC43BD719C3B4D400594EE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8CC43BD819C3B4D400594EE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CC43BDA19C3B4D500594EE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8CC43BE019C3B4D500594EE5 /* SalmosDiariosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalmosDiariosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC43BE119C3B4D500594EE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8CC43BE919C3B4D500594EE5 /* SalmosDiariosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SalmosDiariosTests-Info.plist"; sourceTree = "<group>"; };
 		8CC43BEB19C3B4D500594EE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CC43BED19C3B4D500594EE5 /* SalmosDiariosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalmosDiariosTests.m; sourceTree = "<group>"; };
+		8CC43C0019C3B68D00594EE5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Library/SWRevealViewController.h; sourceTree = "<group>"; };
+		8CC43C0119C3B69D00594EE5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Library/SWRevealViewController.m; sourceTree = "<group>"; };
+		8CC43C0719C3B6E400594EE5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8CC43C0919C3B73E00594EE5 /* configuracoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = configuracoes.json; path = Statics/configuracoes.json; sourceTree = "<group>"; };
+		8CC43C0A19C3B73E00594EE5 /* salmos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = salmos.json; path = Statics/salmos.json; sourceTree = "<group>"; };
+		8CC43C0D19C3B85E00594EE5 /* BannerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BannerHelper.h; path = Helpers/BannerHelper.h; sourceTree = "<group>"; };
+		8CC43C0E19C3B85E00594EE5 /* BannerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BannerHelper.m; path = Helpers/BannerHelper.m; sourceTree = "<group>"; };
+		8CC43C1019C3BBFD00594EE5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		8CC43C1119C3BBFD00594EE5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		8CC43C1319C3BC5900594EE5 /* SalmosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalmosTableViewController.h; path = ViewControllers/SalmosTableViewController.h; sourceTree = "<group>"; };
+		8CC43C1419C3BC5900594EE5 /* SalmosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalmosTableViewController.m; path = ViewControllers/SalmosTableViewController.m; sourceTree = "<group>"; };
+		8CC43C1719C3BE5800594EE5 /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideBarViewController.h; path = ViewControllers/SideBarViewController.h; sourceTree = "<group>"; };
+		8CC43C1819C3BE5800594EE5 /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideBarViewController.m; path = ViewControllers/SideBarViewController.m; sourceTree = "<group>"; };
+		8CC43C1A19C3D6B700594EE5 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		8CC43C1B19C47F3D00594EE5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = Models/Menu.h; sourceTree = "<group>"; };
+		8CC43C1C19C47F3D00594EE5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = Models/Menu.m; sourceTree = "<group>"; };
+		8CC43C1E19C47FDD00594EE5 /* menuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuCell.h; path = Views/menuCell.h; sourceTree = "<group>"; };
+		8CC43C1F19C47FDD00594EE5 /* menuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuCell.m; path = Views/menuCell.m; sourceTree = "<group>"; };
+		8CC43C2419C4807F00594EE5 /* Menu+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Menu+Parse.h"; path = "Categories/Menu+Parse.h"; sourceTree = "<group>"; };
+		8CC43C2519C4807F00594EE5 /* Menu+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Menu+Parse.m"; path = "Categories/Menu+Parse.m"; sourceTree = "<group>"; };
+		9793204A76414785A1406685 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D66BB417095245B2AA9E5F15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC43C0819C3B6E400594EE5 /* Social.framework in Frameworks */,
 				8CC43BC519C3B4D400594EE5 /* CoreGraphics.framework in Frameworks */,
 				8CC43BC719C3B4D400594EE5 /* UIKit.framework in Frameworks */,
 				8CC43BC319C3B4D400594EE5 /* Foundation.framework in Frameworks */,
+				B013364942FD45D38E1E055C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +115,12 @@
 		8CC43BB619C3B4D400594EE5 = {
 			isa = PBXGroup;
 			children = (
+				8CC43C0619C3B6C500594EE5 /* Static */,
 				8CC43BC819C3B4D400594EE5 /* SalmosDiarios */,
 				8CC43BE719C3B4D500594EE5 /* SalmosDiariosTests */,
 				8CC43BC119C3B4D400594EE5 /* Frameworks */,
 				8CC43BC019C3B4D400594EE5 /* Products */,
+				9793204A76414785A1406685 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +136,12 @@
 		8CC43BC119C3B4D400594EE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CC43C0719C3B6E400594EE5 /* Social.framework */,
 				8CC43BC219C3B4D400594EE5 /* Foundation.framework */,
 				8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */,
 				8CC43BC619C3B4D400594EE5 /* UIKit.framework */,
 				8CC43BE119C3B4D500594EE5 /* XCTest.framework */,
+				D66BB417095245B2AA9E5F15 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,13 +149,18 @@
 		8CC43BC819C3B4D400594EE5 /* SalmosDiarios */ = {
 			isa = PBXGroup;
 			children = (
+				8CC43BFC19C3B5FA00594EE5 /* Library */,
+				8CC43BFB19C3B5E900594EE5 /* Categories */,
+				8CC43BFA19C3B5E200594EE5 /* Helpers */,
+				8CC43BF919C3B5DB00594EE5 /* Views */,
+				8CC43BF819C3B5D100594EE5 /* Models */,
+				8CC43BF719C3B5C500594EE5 /* ViewControllers */,
 				8CC43BD119C3B4D400594EE5 /* AppDelegate.h */,
 				8CC43BD219C3B4D400594EE5 /* AppDelegate.m */,
 				8CC43BD419C3B4D400594EE5 /* Main.storyboard */,
-				8CC43BD719C3B4D400594EE5 /* ViewController.h */,
-				8CC43BD819C3B4D400594EE5 /* ViewController.m */,
 				8CC43BDA19C3B4D500594EE5 /* Images.xcassets */,
 				8CC43BC919C3B4D400594EE5 /* Supporting Files */,
+				8CC43C1A19C3D6B700594EE5 /* Global.h */,
 			);
 			path = SalmosDiarios;
 			sourceTree = "<group>";
@@ -126,6 +168,7 @@
 		8CC43BC919C3B4D400594EE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CC43C1619C3BCC400594EE5 /* images */,
 				8CC43BCA19C3B4D400594EE5 /* SalmosDiarios-Info.plist */,
 				8CC43BCB19C3B4D400594EE5 /* InfoPlist.strings */,
 				8CC43BCE19C3B4D400594EE5 /* main.m */,
@@ -152,6 +195,80 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CC43BF719C3B5C500594EE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C1019C3BBFD00594EE5 /* MainViewController.h */,
+				8CC43C1119C3BBFD00594EE5 /* MainViewController.m */,
+				8CC43C1319C3BC5900594EE5 /* SalmosTableViewController.h */,
+				8CC43C1419C3BC5900594EE5 /* SalmosTableViewController.m */,
+				8CC43C1719C3BE5800594EE5 /* SideBarViewController.h */,
+				8CC43C1819C3BE5800594EE5 /* SideBarViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CC43BF819C3B5D100594EE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C1B19C47F3D00594EE5 /* Menu.h */,
+				8CC43C1C19C47F3D00594EE5 /* Menu.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8CC43BF919C3B5DB00594EE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C1E19C47FDD00594EE5 /* menuCell.h */,
+				8CC43C1F19C47FDD00594EE5 /* menuCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8CC43BFA19C3B5E200594EE5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C0D19C3B85E00594EE5 /* BannerHelper.h */,
+				8CC43C0E19C3B85E00594EE5 /* BannerHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8CC43BFB19C3B5E900594EE5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C2419C4807F00594EE5 /* Menu+Parse.h */,
+				8CC43C2519C4807F00594EE5 /* Menu+Parse.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8CC43BFC19C3B5FA00594EE5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C0019C3B68D00594EE5 /* SWRevealViewController.h */,
+				8CC43C0119C3B69D00594EE5 /* SWRevealViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8CC43C0619C3B6C500594EE5 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				8CC43C0919C3B73E00594EE5 /* configuracoes.json */,
+				8CC43C0A19C3B73E00594EE5 /* salmos.json */,
+			);
+			name = Static;
+			sourceTree = "<group>";
+		};
+		8CC43C1619C3BCC400594EE5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC43BF119C3B4D500594EE5 /* Build configuration list for PBXNativeTarget "SalmosDiarios" */;
 			buildPhases = (
+				98F668040DB84FF8B80B6D46 /* Check Pods Manifest.lock */,
 				8CC43BBB19C3B4D400594EE5 /* Sources */,
 				8CC43BBC19C3B4D400594EE5 /* Frameworks */,
 				8CC43BBD19C3B4D400594EE5 /* Resources */,
+				82F172F9F10B413F81DD12B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +349,8 @@
 			files = (
 				8CC43BDB19C3B4D500594EE5 /* Images.xcassets in Resources */,
 				8CC43BCD19C3B4D400594EE5 /* InfoPlist.strings in Resources */,
+				8CC43C0B19C3B73E00594EE5 /* configuracoes.json in Resources */,
+				8CC43C0C19C3B73E00594EE5 /* salmos.json in Resources */,
 				8CC43BD619C3B4D400594EE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +365,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82F172F9F10B413F81DD12B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F668040DB84FF8B80B6D46 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CC43BBB19C3B4D400594EE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC43BD919C3B4D400594EE5 /* ViewController.m in Sources */,
+				8CC43C1919C3BE5800594EE5 /* SideBarViewController.m in Sources */,
+				8CC43C1519C3BC5900594EE5 /* SalmosTableViewController.m in Sources */,
 				8CC43BD319C3B4D400594EE5 /* AppDelegate.m in Sources */,
+				8CC43C1219C3BBFD00594EE5 /* MainViewController.m in Sources */,
+				8CC43C0219C3B69D00594EE5 /* SWRevealViewController.m in Sources */,
 				8CC43BCF19C3B4D400594EE5 /* main.m in Sources */,
+				8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */,
+				8CC43C1D19C47F3D00594EE5 /* Menu.m in Sources */,
+				8CC43C0F19C3B85E00594EE5 /* BannerHelper.m in Sources */,
+				8CC43C2019C47FDD00594EE5 /* menuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +534,14 @@
 		};
 		8CC43BF219C3B4D500594EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9793204A76414785A1406685 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalmosDiarios/SalmosDiarios-Prefix.pch";
 				INFOPLIST_FILE = "SalmosDiarios/SalmosDiarios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -386,12 +549,14 @@
 		};
 		8CC43BF319C3B4D500594EE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9793204A76414785A1406685 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalmosDiarios/SalmosDiarios-Prefix.pch";
 				INFOPLIST_FILE = "SalmosDiarios/SalmosDiarios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +621,7 @@
 				8CC43BF319C3B4D500594EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CC43BF419C3B4D500594EE5 /* Build configuration list for PBXNativeTarget "SalmosDiariosTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +630,7 @@
 				8CC43BF619C3B4D500594EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

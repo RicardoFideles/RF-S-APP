@@ -1,0 +1,29 @@
+{
+    "configuracoes":[
+        
+        {
+            "label": "Salmos",
+            "storyboardId": "ListaSalmosTableViewController"
+        },
+        {
+            "label": "Compartilhe o aplicativo",
+            "storyboardId": "ShareApp"
+        },
+        {
+            "label": "Avalie o aplicativo",
+            "storyboardId": "EvaluateApp"
+        },
+        {
+            "label": "Suporte",
+            "storyboardId": "SendEmail"
+        },
+        {
+            "label": "Ajustes",
+            "storyboardId": "ConfiguracoesViewController"
+        },
+        {
+            "label": "Sobre",
+            "storyboardId": "AboutViewController"
+        }
+    ]
+}

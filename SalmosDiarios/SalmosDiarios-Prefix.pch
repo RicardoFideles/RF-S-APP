@@ -12,5 +12,6 @@
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
+    #import "Global.h"
     #import <Foundation/Foundation.h>
 #endif
