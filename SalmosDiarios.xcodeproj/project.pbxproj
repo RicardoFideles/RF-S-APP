@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C4B998419C4BD130078F284 /* Salmo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998319C4BD130078F284 /* Salmo.m */; };
+		8C4B998719C4BD220078F284 /* Versiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998619C4BD220078F284 /* Versiculo.m */; };
+		8C4B998A19C4BD360078F284 /* Salmo+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998919C4BD360078F284 /* Salmo+Parse.m */; };
+		8C4B998D19C4BD440078F284 /* Versiculo+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998C19C4BD440078F284 /* Versiculo+Parse.m */; };
+		8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */; };
 		8CC43BC319C3B4D400594EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC219C3B4D400594EE5 /* Foundation.framework */; };
 		8CC43BC519C3B4D400594EE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */; };
 		8CC43BC719C3B4D400594EE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC619C3B4D400594EE5 /* UIKit.framework */; };
@@ -45,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C4B998219C4BD130078F284 /* Salmo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Salmo.h; path = Models/Salmo.h; sourceTree = "<group>"; };
+		8C4B998319C4BD130078F284 /* Salmo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Salmo.m; path = Models/Salmo.m; sourceTree = "<group>"; };
+		8C4B998519C4BD220078F284 /* Versiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Versiculo.h; path = Models/Versiculo.h; sourceTree = "<group>"; };
+		8C4B998619C4BD220078F284 /* Versiculo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Versiculo.m; path = Models/Versiculo.m; sourceTree = "<group>"; };
+		8C4B998819C4BD360078F284 /* Salmo+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Salmo+Parse.h"; path = "Categories/Salmo+Parse.h"; sourceTree = "<group>"; };
+		8C4B998919C4BD360078F284 /* Salmo+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Salmo+Parse.m"; path = "Categories/Salmo+Parse.m"; sourceTree = "<group>"; };
+		8C4B998B19C4BD440078F284 /* Versiculo+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Versiculo+Parse.h"; path = "Categories/Versiculo+Parse.h"; sourceTree = "<group>"; };
+		8C4B998C19C4BD440078F284 /* Versiculo+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Versiculo+Parse.m"; path = "Categories/Versiculo+Parse.m"; sourceTree = "<group>"; };
+		8C4B998E19C4BD7F0078F284 /* ReadSalmosJsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadSalmosJsonHelper.h; path = Helpers/ReadSalmosJsonHelper.h; sourceTree = "<group>"; };
+		8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadSalmosJsonHelper.m; path = Helpers/ReadSalmosJsonHelper.m; sourceTree = "<group>"; };
 		8CC43BBF19C3B4D400594EE5 /* SalmosDiarios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalmosDiarios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC43BC219C3B4D400594EE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -213,6 +228,10 @@
 			children = (
 				8CC43C1B19C47F3D00594EE5 /* Menu.h */,
 				8CC43C1C19C47F3D00594EE5 /* Menu.m */,
+				8C4B998219C4BD130078F284 /* Salmo.h */,
+				8C4B998319C4BD130078F284 /* Salmo.m */,
+				8C4B998519C4BD220078F284 /* Versiculo.h */,
+				8C4B998619C4BD220078F284 /* Versiculo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +250,8 @@
 			children = (
 				8CC43C0D19C3B85E00594EE5 /* BannerHelper.h */,
 				8CC43C0E19C3B85E00594EE5 /* BannerHelper.m */,
+				8C4B998E19C4BD7F0078F284 /* ReadSalmosJsonHelper.h */,
+				8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -240,6 +261,10 @@
 			children = (
 				8CC43C2419C4807F00594EE5 /* Menu+Parse.h */,
 				8CC43C2519C4807F00594EE5 /* Menu+Parse.m */,
+				8C4B998819C4BD360078F284 /* Salmo+Parse.h */,
+				8C4B998919C4BD360078F284 /* Salmo+Parse.m */,
+				8C4B998B19C4BD440078F284 /* Versiculo+Parse.h */,
+				8C4B998C19C4BD440078F284 /* Versiculo+Parse.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -403,12 +428,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4B998419C4BD130078F284 /* Salmo.m in Sources */,
+				8C4B998A19C4BD360078F284 /* Salmo+Parse.m in Sources */,
+				8C4B998D19C4BD440078F284 /* Versiculo+Parse.m in Sources */,
 				8CC43C1919C3BE5800594EE5 /* SideBarViewController.m in Sources */,
+				8C4B998719C4BD220078F284 /* Versiculo.m in Sources */,
 				8CC43C1519C3BC5900594EE5 /* SalmosTableViewController.m in Sources */,
 				8CC43BD319C3B4D400594EE5 /* AppDelegate.m in Sources */,
 				8CC43C1219C3BBFD00594EE5 /* MainViewController.m in Sources */,
 				8CC43C0219C3B69D00594EE5 /* SWRevealViewController.m in Sources */,
 				8CC43BCF19C3B4D400594EE5 /* main.m in Sources */,
+				8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */,
 				8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */,
 				8CC43C1D19C47F3D00594EE5 /* Menu.m in Sources */,
 				8CC43C0F19C3B85E00594EE5 /* BannerHelper.m in Sources */,

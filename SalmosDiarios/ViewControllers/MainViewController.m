@@ -12,6 +12,10 @@
 
 @interface MainViewController ()
 
+@property (copy, nonatomic) Salmo *salmo;
+@property (copy, nonatomic) Versiculo *versiculo;
+@property (weak, nonatomic) IBOutlet UILabel *labelSalmo;
+
 @end
 
 @implementation MainViewController
@@ -19,20 +23,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [BannerHelper showWithViewController:self];
     
-    // Change button color
-    //_sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
+    self.salmos = [ReadSalmosJsonHelper readSalmos];
     
-    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    [self configureLabelSalmo];
+    
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     
-    // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
 
-    // Do any additional setup after loading the view.
+}
+
+- (Salmo *)pickRandomSalmo {
+    
+    Salmo *randomSalmo = nil;
+    if (self.salmos.count) {
+        unsigned index = arc4random() % self.salmos.count;
+        randomSalmo = self.salmos[index];
+    }
+    return randomSalmo;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -52,6 +65,44 @@
 - (void) configureBackground {
     
     self.view.backgroundColor = K_COLOR_VIEW_HOME;
+    
+}
+
+- (Salmo *) salmo
+{
+    _salmo = [self pickRandomSalmo];
+    return _salmo;
+}
+
+- (Versiculo *) versiculo
+{
+    _versiculo = self.salmo.pickRandomVersiculo;
+    return _versiculo;
+}
+
+- (IBAction)share:(id)sender {
+    
+    NSString *text = [NSString stringWithFormat:@"%@", self.versiculo.texto];
+    
+    NSString *subject = [NSString stringWithFormat:NSLocalizedString(@"Salmos da Bíblia Sagrada", nil), self.versiculo.texto];
+    
+    
+    NSArray *activityItems = @[text];
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    [activityController setValue:subject forKey:@"subject"];
+    
+    [self presentViewController:activityController animated:YES completion:nil];
+    
+    
+}
+
+
+- (void) configureLabelSalmo {
+    
+    _labelSalmo.attributedText = [[NSAttributedString alloc]
+                                  initWithString:self.versiculo.texto];
     
 }
 

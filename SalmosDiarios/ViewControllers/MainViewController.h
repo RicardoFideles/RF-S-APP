@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "BannerHelper.h"
 #import "HexColor.h"
+#import "Salmo+Parse.h"
+#import "ReadSalmosJsonHelper.h"
+
 
 
 @interface MainViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+@property (nonatomic, strong) NSArray *salmos;
+
+
+- (Salmo *)pickRandomSalmo;
 
 @end
