@@ -74,6 +74,15 @@
 
 #define K_COLOR_VIEW_HOME [UIColor colorWithHexString:@"#FFFFFF" alpha:1.0f]
 
+#define K_COLOR_VIEW_MENU_BACKGROUND [UIColor colorWithHexString:@"#383d43" alpha:1.0f]
+
+#define K_COLOR_VIEW_MENU_ITEM [UIColor colorWithHexString:@"#FFFFFF" alpha:1.0f]
+
+#define K_COLOR_HEADER [UIColor colorWithHexString:@"#4fc1e9" alpha:1.0f]
+
+
+
+
 //---------------------------
 // FONT SIZE
 //---------------------------

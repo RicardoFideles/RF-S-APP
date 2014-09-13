@@ -12,6 +12,8 @@
 		8C4B998A19C4BD360078F284 /* Salmo+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998919C4BD360078F284 /* Salmo+Parse.m */; };
 		8C4B998D19C4BD440078F284 /* Versiculo+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998C19C4BD440078F284 /* Versiculo+Parse.m */; };
 		8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */; };
+		8C4B999319C4E9730078F284 /* StyleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B999219C4E9730078F284 /* StyleHelper.m */; };
+		8C4B999819C508AC0078F284 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C4B999719C508AC0078F284 /* Localizable.strings */; };
 		8CC43BC319C3B4D400594EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC219C3B4D400594EE5 /* Foundation.framework */; };
 		8CC43BC519C3B4D400594EE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */; };
 		8CC43BC719C3B4D400594EE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC619C3B4D400594EE5 /* UIKit.framework */; };
@@ -60,6 +62,9 @@
 		8C4B998C19C4BD440078F284 /* Versiculo+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Versiculo+Parse.m"; path = "Categories/Versiculo+Parse.m"; sourceTree = "<group>"; };
 		8C4B998E19C4BD7F0078F284 /* ReadSalmosJsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadSalmosJsonHelper.h; path = Helpers/ReadSalmosJsonHelper.h; sourceTree = "<group>"; };
 		8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadSalmosJsonHelper.m; path = Helpers/ReadSalmosJsonHelper.m; sourceTree = "<group>"; };
+		8C4B999119C4E9730078F284 /* StyleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleHelper.h; path = Helpers/StyleHelper.h; sourceTree = "<group>"; };
+		8C4B999219C4E9730078F284 /* StyleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleHelper.m; path = Helpers/StyleHelper.m; sourceTree = "<group>"; };
+		8C4B999719C508AC0078F284 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8CC43BBF19C3B4D400594EE5 /* SalmosDiarios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalmosDiarios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC43BC219C3B4D400594EE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +188,7 @@
 		8CC43BC919C3B4D400594EE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C4B999719C508AC0078F284 /* Localizable.strings */,
 				8CC43C1619C3BCC400594EE5 /* images */,
 				8CC43BCA19C3B4D400594EE5 /* SalmosDiarios-Info.plist */,
 				8CC43BCB19C3B4D400594EE5 /* InfoPlist.strings */,
@@ -252,6 +258,8 @@
 				8CC43C0E19C3B85E00594EE5 /* BannerHelper.m */,
 				8C4B998E19C4BD7F0078F284 /* ReadSalmosJsonHelper.h */,
 				8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */,
+				8C4B999119C4E9730078F284 /* StyleHelper.h */,
+				8C4B999219C4E9730078F284 /* StyleHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC43BDB19C3B4D500594EE5 /* Images.xcassets in Resources */,
+				8C4B999819C508AC0078F284 /* Localizable.strings in Resources */,
 				8CC43BCD19C3B4D400594EE5 /* InfoPlist.strings in Resources */,
 				8CC43C0B19C3B73E00594EE5 /* configuracoes.json in Resources */,
 				8CC43C0C19C3B73E00594EE5 /* salmos.json in Resources */,
@@ -437,6 +446,7 @@
 				8CC43BD319C3B4D400594EE5 /* AppDelegate.m in Sources */,
 				8CC43C1219C3BBFD00594EE5 /* MainViewController.m in Sources */,
 				8CC43C0219C3B69D00594EE5 /* SWRevealViewController.m in Sources */,
+				8C4B999319C4E9730078F284 /* StyleHelper.m in Sources */,
 				8CC43BCF19C3B4D400594EE5 /* main.m in Sources */,
 				8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */,
 				8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */,

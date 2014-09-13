@@ -18,10 +18,6 @@
             "storyboardId": "SendEmail"
         },
         {
-            "label": "Ajustes",
-            "storyboardId": "ConfiguracoesViewController"
-        },
-        {
             "label": "Sobre",
             "storyboardId": "AboutViewController"
         }

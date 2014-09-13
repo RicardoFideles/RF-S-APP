@@ -11,6 +11,7 @@
 #import "HexColor.h"
 #import "Salmo+Parse.h"
 #import "ReadSalmosJsonHelper.h"
+#import "StyleHelper.h"
 
 
 

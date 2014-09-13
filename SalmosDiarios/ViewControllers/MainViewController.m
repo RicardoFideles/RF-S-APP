@@ -38,6 +38,21 @@
 
 }
 
+- (void)configureNavBar {
+    
+    
+    self.navigationController.navigationBar.titleTextAttributes =   [StyleHelper estiloTop];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    self.navigationController.navigationBar.barTintColor = K_COLOR_HEADER;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.title = [@"Salmos Diários" uppercaseString];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+}
+
 - (Salmo *)pickRandomSalmo {
     
     Salmo *randomSalmo = nil;
@@ -52,6 +67,7 @@
 {
     [super viewWillAppear:animated];
     [self configureBackground];
+    [self configureNavBar];
     self.title = @"SALMOS DIÁRIOS";
     
 }
