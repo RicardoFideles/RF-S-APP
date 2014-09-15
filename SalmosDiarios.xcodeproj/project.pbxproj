@@ -14,6 +14,7 @@
 		8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B998F19C4BD7F0078F284 /* ReadSalmosJsonHelper.m */; };
 		8C4B999319C4E9730078F284 /* StyleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B999219C4E9730078F284 /* StyleHelper.m */; };
 		8C4B999819C508AC0078F284 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C4B999719C508AC0078F284 /* Localizable.strings */; };
+		8C9D3CA619C735C700F0195F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9D3CA519C735C700F0195F /* AboutViewController.m */; };
 		8CC43BC319C3B4D400594EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC219C3B4D400594EE5 /* Foundation.framework */; };
 		8CC43BC519C3B4D400594EE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */; };
 		8CC43BC719C3B4D400594EE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC43BC619C3B4D400594EE5 /* UIKit.framework */; };
@@ -65,6 +66,8 @@
 		8C4B999119C4E9730078F284 /* StyleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleHelper.h; path = Helpers/StyleHelper.h; sourceTree = "<group>"; };
 		8C4B999219C4E9730078F284 /* StyleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleHelper.m; path = Helpers/StyleHelper.m; sourceTree = "<group>"; };
 		8C4B999719C508AC0078F284 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8C9D3CA419C735C700F0195F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ViewControllers/AboutViewController.h; sourceTree = "<group>"; };
+		8C9D3CA519C735C700F0195F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ViewControllers/AboutViewController.m; sourceTree = "<group>"; };
 		8CC43BBF19C3B4D400594EE5 /* SalmosDiarios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalmosDiarios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC43BC219C3B4D400594EE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CC43BC419C3B4D400594EE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -225,6 +228,8 @@
 				8CC43C1419C3BC5900594EE5 /* SalmosTableViewController.m */,
 				8CC43C1719C3BE5800594EE5 /* SideBarViewController.h */,
 				8CC43C1819C3BE5800594EE5 /* SideBarViewController.m */,
+				8C9D3CA419C735C700F0195F /* AboutViewController.h */,
+				8C9D3CA519C735C700F0195F /* AboutViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 				8CC43BD319C3B4D400594EE5 /* AppDelegate.m in Sources */,
 				8CC43C1219C3BBFD00594EE5 /* MainViewController.m in Sources */,
 				8CC43C0219C3B69D00594EE5 /* SWRevealViewController.m in Sources */,
+				8C9D3CA619C735C700F0195F /* AboutViewController.m in Sources */,
 				8C4B999319C4E9730078F284 /* StyleHelper.m in Sources */,
 				8CC43BCF19C3B4D400594EE5 /* main.m in Sources */,
 				8C4B999019C4BD7F0078F284 /* ReadSalmosJsonHelper.m in Sources */,

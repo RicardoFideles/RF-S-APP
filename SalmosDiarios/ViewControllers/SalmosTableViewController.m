@@ -30,7 +30,8 @@
     [super viewDidLoad];
     
     self.salmos = [ReadSalmosJsonHelper readSalmos];
-    
+    [BannerHelper showWithViewController:self];
+
     
     
     _sidebarButton.target = self.revealViewController;

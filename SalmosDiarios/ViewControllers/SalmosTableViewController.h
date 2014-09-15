@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ReadSalmosJsonHelper.h"
+#import "BannerHelper.h"
 
 @interface SalmosTableViewController : UITableViewController
 

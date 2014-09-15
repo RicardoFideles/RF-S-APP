@@ -2,6 +2,11 @@
     "configuracoes":[
         
         {
+            "label": "Início",
+            "storyboardId": "frontApp"
+        },
+        
+        {
             "label": "Salmos",
             "storyboardId": "ListaSalmosTableViewController"
         },

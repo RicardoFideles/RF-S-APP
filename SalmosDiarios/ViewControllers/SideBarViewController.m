@@ -91,8 +91,6 @@
     
     [cell setBackgroundColor:K_COLOR_VIEW_MENU_BACKGROUND];
     
-    NSLog(@"item do menu %@", item.label);
-    
     menuCell *menuItem = (menuCell *)cell;
     menuItem.label.text = item.label;
     menuItem.label.textColor = K_COLOR_VIEW_MENU_ITEM;
@@ -101,10 +99,6 @@
         menuItem.topLineDivider.hidden = NO;
     }
     
- //   menuItem.topLineDivider.hidden = ([indexPath row] == 0 && [indexPath row] != self.selectedIndex) ? NO : YES;
-
-    
-    //Remove o separador default
     menuItem.separatorInset = UIEdgeInsetsMake(0, 10000, 0, 0);
     
     UIView *selectionColor = [[UIView alloc] init];
@@ -117,9 +111,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60;
 }
-
-
-
 
 #pragma ###################################################################################################################
 #pragma mark - UITableViewDelegate
@@ -157,17 +148,6 @@
             [alert show];
         }
         return;
-    }
-    
-    if ([storyboardId isEqualToString:@"ListaSalmosTableViewController"]) {
-        
-        NSLog(@"cliquei nos salmos");
-        
-        UITableViewController *myController = [self.storyboard instantiateViewControllerWithIdentifier:@"salmosTBC"];
-        [self.navigationController pushViewController: myController animated:YES];
-        
-        
-        
     }
 
 }
@@ -287,28 +267,52 @@
 
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
 {
-    // Set the title of navigation bar by using the menu items
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    
-    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    
 
-    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    Menu *itemMenu = [self.itensMenu objectAtIndex:[indexPath row]];
+
+    if ([itemMenu.storyboardId isEqualToString:@"ListaSalmosTableViewController"]) {
+        
+        UITableViewController *tbvc = [self.storyboard instantiateViewControllerWithIdentifier:@"salmosTBC"];
+        
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
         
         swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
             
             UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
-            [navController setViewControllers: @[dvc] animated: NO ];
+            [navController setViewControllers: @[tbvc] animated: NO ];
             [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
         };
-        
     }
     
+    
+    
+    if ([itemMenu.storyboardId isEqualToString:@"frontApp"]) {
+        
+        UIViewController *frontController = [self.storyboard instantiateViewControllerWithIdentifier:@"frontApp"];
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[frontController] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+    }
+    
+    
+    if ([itemMenu.storyboardId isEqualToString:@"AboutViewController"]) {
+        
+        UIViewController *frontController = [self.storyboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[frontController] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+    }
 }
-
-
-
-
 
 @end
