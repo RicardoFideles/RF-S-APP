@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReadSalmosJsonHelper.h"
 
 @interface SalmosTableViewController : UITableViewController
+
+@property (nonatomic, strong) NSArray *salmos;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

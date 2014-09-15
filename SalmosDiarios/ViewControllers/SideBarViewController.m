@@ -7,6 +7,7 @@
 //
 
 #import "SideBarViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SideBarViewController ()
 @property (weak, nonatomic) IBOutlet UIView *menuTopo;
@@ -160,6 +161,13 @@
     
     if ([storyboardId isEqualToString:@"ListaSalmosTableViewController"]) {
         
+        NSLog(@"cliquei nos salmos");
+        
+        UITableViewController *myController = [self.storyboard instantiateViewControllerWithIdentifier:@"salmosTBC"];
+        [self.navigationController pushViewController: myController animated:YES];
+        
+        
+        
     }
 
 }
@@ -275,6 +283,28 @@
     }
     
     return deviceName;
+}
+
+- (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
+{
+    // Set the title of navigation bar by using the menu items
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+    
+
+    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[dvc] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+        
+    }
+    
 }
 
 

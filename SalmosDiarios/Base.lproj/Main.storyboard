@@ -67,16 +67,16 @@
             </objects>
             <point key="canvasLocation" x="-294" y="458"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Salmos Table View Controller-->
         <scene sceneID="buT-uc-WRt">
             <objects>
-                <tableViewController id="Axa-ic-icu" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="salmosTBC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Axa-ic-icu" customClass="SalmosTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dr9-5j-GTX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="RDY-NB-BK8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="salmo" id="RDY-NB-BK8">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RDY-NB-BK8" id="pzF-cB-sDn">
@@ -90,10 +90,16 @@
                             <outlet property="delegate" destination="Axa-ic-icu" id="dJh-BS-gc5"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="KSn-cV-3BG">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="vUY-Ua-gKz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sidebarButton" destination="vUY-Ua-gKz" id="PZp-Aw-wyZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grl-cd-g6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271" y="460"/>
+            <point key="canvasLocation" x="2" y="-767"/>
         </scene>
         <!--Side Bar View Controller-->
         <scene sceneID="9Mm-vL-a5m">
@@ -175,6 +181,7 @@
                                         <connections>
                                             <outlet property="label" destination="JhT-vM-8Bn" id="5HG-Fe-nMy"/>
                                             <outlet property="topLineDivider" destination="a1o-X2-mIB" id="BQ2-aR-Sed"/>
+                                            <segue destination="Axa-ic-icu" kind="custom" identifier="listasalmos" customClass="SWRevealViewControllerSegue" id="JX3-Ij-XfD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
