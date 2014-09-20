@@ -12,4 +12,6 @@
 
 + (void) showWithViewController:(UIViewController *)viewController;
 
++ (void) showWithTableViewController:(UIViewController *)viewController;
+
 @end

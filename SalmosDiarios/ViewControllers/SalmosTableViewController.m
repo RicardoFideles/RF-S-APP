@@ -8,6 +8,9 @@
 
 #import "SalmosTableViewController.h"
 #import "SWRevealViewController.h"
+#import "VersiculosTableViewController.h"
+#import "GADBannerView.h"
+
 
 
 @interface SalmosTableViewController ()
@@ -30,7 +33,6 @@
     [super viewDidLoad];
     
     self.salmos = [ReadSalmosJsonHelper readSalmos];
-    [BannerHelper showWithViewController:self];
 
     
     
@@ -38,12 +40,7 @@
     _sidebarButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,53 +77,69 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"versiculos"]) {
+        if ([segue.destinationViewController isKindOfClass:[VersiculosTableViewController class]]) {
+            VersiculosTableViewController *vtc = (VersiculosTableViewController *)segue.destinationViewController;
+            
+            
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+            
+            Salmo *salmo = [self.salmos objectAtIndex:indexPath.row];
+            
+            vtc.versiculos = [salmo versiculos];
+            vtc.salmo = [@"Salmo " stringByAppendingString:[salmo capitulo]];
+            
+            vtc.title = [@"Versículos" uppercaseString];
+            
+            
+        }
+    }
 }
-*/
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    
+    GADBannerView *bannerView_ ;
+    
+    
+    bannerView_  = [[GADBannerView alloc]
+                    initWithFrame:CGRectMake(
+                                             0.0,
+                                             self.view.frame.size.height - GAD_SIZE_320x50.height,
+                                             GAD_SIZE_320x50.width,
+                                             GAD_SIZE_320x50.height)];
+    
+
+    // Specify the ad's "unit identifier." This is your AdMob Publisher ID.
+//    bannerView_.adUnitID = @"a15120dbc353a5f";
+    bannerView_.adUnitID = @"ca-app-pub-3454917145399398/9876834358";
+
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    
+    
+    GADRequest *request = [GADRequest request];
+    request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+    
+    // Initiate a generic request to load it with an ad.    
+    [bannerView_ loadRequest:request];
+
+    
+    
+    
+    return bannerView_;
+}
+
+-(float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    // admob ad size height
+    return 50.0;
+}
+
 
 @end

@@ -24,9 +24,9 @@
 {
     [super viewDidLoad];
     
-    [BannerHelper showWithViewController:self];
     
     self.salmos = [ReadSalmosJsonHelper readSalmos];
+    
     
     [self configureLabelSalmo];
     
@@ -34,9 +34,12 @@
     _sidebarButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
+    
+    
+    [BannerHelper showWithViewController:self];
 
 }
+
 
 - (void)configureNavBar {
     
@@ -46,10 +49,8 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     self.navigationController.navigationBar.barTintColor = K_COLOR_HEADER;
+    
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = NO;
-    self.title = [@"Salmos Diários" uppercaseString];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
 }
 
@@ -121,5 +122,7 @@
                                   initWithString:self.versiculo.texto];
     
 }
+ 
+
 
 @end

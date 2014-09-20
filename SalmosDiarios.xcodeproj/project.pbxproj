@@ -39,6 +39,8 @@
 		8CC43C1D19C47F3D00594EE5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1C19C47F3D00594EE5 /* Menu.m */; };
 		8CC43C2019C47FDD00594EE5 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C1F19C47FDD00594EE5 /* menuCell.m */; };
 		8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC43C2519C4807F00594EE5 /* Menu+Parse.m */; };
+		8CFD832119C73A9D004CA39A /* VersiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD832019C73A9D004CA39A /* VersiculosTableViewController.m */; };
+		8CFD832419C8B6CB004CA39A /* DisplaySalmoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD832319C8B6CB004CA39A /* DisplaySalmoViewController.m */; };
 		B013364942FD45D38E1E055C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D66BB417095245B2AA9E5F15 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +107,10 @@
 		8CC43C1F19C47FDD00594EE5 /* menuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuCell.m; path = Views/menuCell.m; sourceTree = "<group>"; };
 		8CC43C2419C4807F00594EE5 /* Menu+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Menu+Parse.h"; path = "Categories/Menu+Parse.h"; sourceTree = "<group>"; };
 		8CC43C2519C4807F00594EE5 /* Menu+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Menu+Parse.m"; path = "Categories/Menu+Parse.m"; sourceTree = "<group>"; };
+		8CFD831F19C73A9D004CA39A /* VersiculosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VersiculosTableViewController.h; path = ViewControllers/VersiculosTableViewController.h; sourceTree = "<group>"; };
+		8CFD832019C73A9D004CA39A /* VersiculosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VersiculosTableViewController.m; path = ViewControllers/VersiculosTableViewController.m; sourceTree = "<group>"; };
+		8CFD832219C8B6CB004CA39A /* DisplaySalmoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplaySalmoViewController.h; path = ViewControllers/DisplaySalmoViewController.h; sourceTree = "<group>"; };
+		8CFD832319C8B6CB004CA39A /* DisplaySalmoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplaySalmoViewController.m; path = ViewControllers/DisplaySalmoViewController.m; sourceTree = "<group>"; };
 		9793204A76414785A1406685 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D66BB417095245B2AA9E5F15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -230,6 +236,10 @@
 				8CC43C1819C3BE5800594EE5 /* SideBarViewController.m */,
 				8C9D3CA419C735C700F0195F /* AboutViewController.h */,
 				8C9D3CA519C735C700F0195F /* AboutViewController.m */,
+				8CFD831F19C73A9D004CA39A /* VersiculosTableViewController.h */,
+				8CFD832019C73A9D004CA39A /* VersiculosTableViewController.m */,
+				8CFD832219C8B6CB004CA39A /* DisplaySalmoViewController.h */,
+				8CFD832319C8B6CB004CA39A /* DisplaySalmoViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -443,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4B998419C4BD130078F284 /* Salmo.m in Sources */,
+				8CFD832419C8B6CB004CA39A /* DisplaySalmoViewController.m in Sources */,
 				8C4B998A19C4BD360078F284 /* Salmo+Parse.m in Sources */,
 				8C4B998D19C4BD440078F284 /* Versiculo+Parse.m in Sources */,
 				8CC43C1919C3BE5800594EE5 /* SideBarViewController.m in Sources */,
@@ -458,6 +469,7 @@
 				8CC43C2619C4807F00594EE5 /* Menu+Parse.m in Sources */,
 				8CC43C1D19C47F3D00594EE5 /* Menu.m in Sources */,
 				8CC43C0F19C3B85E00594EE5 /* BannerHelper.m in Sources */,
+				8CFD832119C73A9D004CA39A /* VersiculosTableViewController.m in Sources */,
 				8CC43C2019C47FDD00594EE5 /* menuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

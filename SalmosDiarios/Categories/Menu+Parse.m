@@ -31,8 +31,6 @@
         for (NSDictionary *item in itens) {
             Menu *itemMenu = [[Menu alloc] initWithDictionary:item];
             [itensDoMenu addObject:itemMenu];
-            
-            NSLog(@"Item do menu: %@", itemMenu);
         }
     }
     @catch (NSException *exception) {

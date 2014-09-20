@@ -48,8 +48,6 @@
     if (!self.selectedIndex) {
         self.selectedIndex = 0;
     }
-
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

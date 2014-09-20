@@ -14,7 +14,6 @@
 #import "StyleHelper.h"
 #import "HexColor.h"
 
-
 @interface SideBarViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, copy) NSArray *itensMenu;
