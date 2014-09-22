@@ -36,7 +36,7 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     
-    [BannerHelper showWithViewController:self];
+    [BannerHelper showBannerForViewController:self];
 
 }
 

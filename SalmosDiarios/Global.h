@@ -80,6 +80,8 @@
 
 #define K_COLOR_HEADER [UIColor colorWithHexString:@"#4fc1e9" alpha:1.0f]
 
+#define AD_MOBI_ID @"ca-app-pub-3454917145399398/9876834358"
+
 
 
 

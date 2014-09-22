@@ -18,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [BannerHelper showWithViewController:self];
+    [BannerHelper showBannerForViewController:self];
+    
+    self.labelSalmo.text = self.versiculo;
 
     // Do any additional setup after loading the view.
 }

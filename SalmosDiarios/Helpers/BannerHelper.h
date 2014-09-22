@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GADBannerView.h"
 
 @interface BannerHelper : NSObject
 
-+ (void) showWithViewController:(UIViewController *)viewController;
++ (void) showBannerForViewController:(UIViewController *)viewController;
 
-+ (void) showWithTableViewController:(UIViewController *)viewController;
++ (GADBannerView *) showBannerForTableViewController:(UIViewController *)viewController;
 
 @end

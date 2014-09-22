@@ -19,28 +19,25 @@
 
 @implementation SalmosTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.salmos = [ReadSalmosJsonHelper readSalmos];
-
-    
     
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,44 +97,13 @@
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    // Create a view of the standard size at the top of the screen.
-    // Available AdSize constants are explained in GADAdSize.h.
     
-    GADBannerView *bannerView_ ;
-    
-    
-    bannerView_  = [[GADBannerView alloc]
-                    initWithFrame:CGRectMake(
-                                             0.0,
-                                             self.view.frame.size.height - GAD_SIZE_320x50.height,
-                                             GAD_SIZE_320x50.width,
-                                             GAD_SIZE_320x50.height)];
-    
-
-    // Specify the ad's "unit identifier." This is your AdMob Publisher ID.
-//    bannerView_.adUnitID = @"a15120dbc353a5f";
-    bannerView_.adUnitID = @"ca-app-pub-3454917145399398/9876834358";
-
-    
-    // Let the runtime know which UIViewController to restore after taking
-    // the user wherever the ad goes and add it to the view hierarchy.
-    bannerView_.rootViewController = self;
-    
-    
-    GADRequest *request = [GADRequest request];
-    request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
-    
-    // Initiate a generic request to load it with an ad.    
-    [bannerView_ loadRequest:request];
-
-    
-    
-    
+    GADBannerView *bannerView_ = [BannerHelper showBannerForTableViewController:self];
     return bannerView_;
 }
 
 -(float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    // admob ad size height
+    
     return 50.0;
 }
 

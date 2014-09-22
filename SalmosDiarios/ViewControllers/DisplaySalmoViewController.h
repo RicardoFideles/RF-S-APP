@@ -14,5 +14,6 @@
 
 @property (copy, nonatomic) NSString *versiculo;
 
+@property (weak, nonatomic) IBOutlet UILabel *labelSalmo;
 
 @end

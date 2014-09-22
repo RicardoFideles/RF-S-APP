@@ -9,6 +9,8 @@
 #import "VersiculosTableViewController.h"
 #import "Versiculo.h"
 #import "DisplaySalmoViewController.h"
+#import "GADBannerView.h"
+
 
 
 @interface VersiculosTableViewController ()
@@ -49,7 +51,7 @@
     
     Versiculo *versiculo = self.versiculos[indexPath.row];
     
-    NSLog(@"Salmo :%@", self.salmo);
+    //NSLog(@"Salmo :%@", self.salmo);
 
     NSString *label = [self.salmo stringByAppendingString:@":"];
 
@@ -66,15 +68,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"viewSalmo"]) {
+    if ([segue.identifier isEqualToString:@"showsalmo"]) {
         if ([segue.destinationViewController isKindOfClass:[DisplaySalmoViewController class]]) {
+            
             DisplaySalmoViewController *dpsvc = (DisplaySalmoViewController *)segue.destinationViewController;
             
             
             NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
             
             Versiculo *versiculo = [self.versiculos objectAtIndex:indexPath.row];
-            
             
             dpsvc.versiculo = [versiculo texto];
             
@@ -90,6 +92,18 @@
             
         }
     }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+        
+    GADBannerView *bannerView_ = [BannerHelper showBannerForTableViewController:self];
+    
+    return bannerView_;
+}
+
+-(float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    
+    return 50.0;
 }
 
 

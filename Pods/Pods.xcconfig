@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/HexColors" "${PODS_ROOT}/Headers/JSONKit-NoWarning" "${PODS_ROOT}/Headers/SDWebImage"
-LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.11.1"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/Google-Mobile-Ads-SDK" -isystem "${PODS_ROOT}/Headers/HexColors" -isystem "${PODS_ROOT}/Headers/JSONKit-NoWarning" -isystem "${PODS_ROOT}/Headers/SDWebImage"
-OTHER_LDFLAGS = -ObjC -lGoogleAdMobAds -framework AVFoundation -framework AudioToolbox -framework CoreGraphics -framework CoreTelephony -framework ImageIO -framework MessageUI -framework StoreKit -framework SystemConfiguration -weak_framework AdSupport
+OTHER_LDFLAGS = -ObjC -lGoogleAdMobAds -framework AVFoundation -framework AudioToolbox -framework CoreGraphics -framework CoreTelephony -framework EventKit -framework EventKitUI -framework ImageIO -framework MessageUI -framework StoreKit -framework SystemConfiguration -weak_framework AdSupport
 PODS_ROOT = ${SRCROOT}/Pods

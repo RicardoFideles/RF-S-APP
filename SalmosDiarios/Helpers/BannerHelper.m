@@ -11,7 +11,7 @@
 
 @implementation BannerHelper
 
-+ (void) showWithViewController:(UIViewController *)viewController
++ (void) showBannerForViewController:(UIViewController *)viewController
 {
     GADBannerView *bannerView_;
     
@@ -22,8 +22,7 @@
                                         GAD_SIZE_320x50.width,
                                         GAD_SIZE_320x50.height)];
     
-    //ID - ADMOBI
-    bannerView_.adUnitID = @"ca-app-pub-3454917145399398/9876834358";
+    bannerView_.adUnitID = AD_MOBI_ID;
     
     bannerView_.rootViewController = viewController;
     [viewController.view addSubview:bannerView_];
@@ -35,10 +34,12 @@
     
 }
 
-+ (void) showWithTableViewController:(UITableViewController *)viewController
++ (GADBannerView *) showBannerForTableViewController:(UIViewController *)viewController;
 {
     
     GADBannerView *bannerView_;
+    
+    NSLog(@"tamanho da tela : %f" ,viewController.view.frame.size.height );
         
     bannerView_  = [[GADBannerView alloc]
                     initWithFrame:CGRectMake(
@@ -49,7 +50,7 @@
     
     
     //ID - ADMOBI
-    bannerView_.adUnitID = @"ca-app-pub-3454917145399398/9876834358";
+    bannerView_.adUnitID = AD_MOBI_ID;
     
     bannerView_.rootViewController = viewController;
     [viewController.view addSubview:bannerView_];
@@ -58,6 +59,8 @@
     request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
     
     [bannerView_ loadRequest:request];
+    
+    return bannerView_;
     
 }
 

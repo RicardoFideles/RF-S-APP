@@ -273,6 +273,9 @@
         
         UITableViewController *tbvc = [self.storyboard instantiateViewControllerWithIdentifier:@"salmosTBC"];
         
+        
+        tbvc.title = [@"Salmos" uppercaseString];
+        
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
         
         swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
