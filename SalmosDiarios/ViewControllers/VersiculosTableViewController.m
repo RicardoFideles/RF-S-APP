@@ -101,9 +101,9 @@
     return bannerView_;
 }
 
--(float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    return 50.0;
+    return 50;
 }
 
 
